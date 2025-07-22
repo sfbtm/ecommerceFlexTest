@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+:root{
+    --color-primario: #333;
+    --color-secundario: #202020;
+    --color-resaltar: #fff;
+}
+
+*{
+    font-family: "Kumbh Sans";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+
+.header{
+    width: 100vw;
+    height: 6rem;
+    color: var(--color-resaltar);
+    background-color: var(--color-secundario);
+    padding: 20px;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.header__navbar__search{
+    width: 40rem;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: none;
+}
+
+.header__navbar__brand{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.header__navbar__item-list{
+    display: flex;
+}
+
+.header__navbar__item-list__item{
+    cursor: pointer;
+    text-decoration: underline;
+    margin-right: 50px;
+    list-style: none;
+    font-size: 20px;
+}
+
+/* Main */
+
+main{
+    background-color: var(--color-primario);
+    height: 100rem;
+    display: flex;
+    flex-direction:column
+}
+    /* Banner */
+
+.banner{
+    width: 90vw;
+    height: 30rem;
+    background-image: url(img/banner2.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    border-radius: 20px;
+
+}
+
+.banner__text{
+    margin: 2.5rem 5rem;
+    font-size: 3.5rem;
+    color: var(--color-secundario);
+    width: 10rem;
+}
+
+.banner__button{
+    height: 3rem;
+    width: 15rem;
+    margin: 2.5rem 5rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    background-color: var(--color-secundario);
+    color:var(--color-resaltar);
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s
+}
+
+.banner__button:hover{
+    background-color: var(--color-resaltar);
+    color: var(--color-secundario);
+    width: 16rem;
+    height: 4rem;
+    font-size: 1.3rem;
+    box-shadow: 0px 0px 20px #202020;
+}
+
+    /* Categories */
+
+.categories{
+    background-color: var(--color-resaltar);
+    display: flex;
+    justify-content: space-evenly;
+    width: 90vw;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.categories__item{
+    list-style: none;
+    cursor: pointer;
+    padding: 0.7rem;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+
+.categories__item:hover{
+    background-color: var(--color-primario);
+    padding: 0.7rem 1.5rem;
+    color: var(--color-resaltar)
+}
+
+    /* Productos */
+
+.productos{
+    background-color: var(--color-resaltar);
+    margin: 2rem auto;
+    width: 90vw;
+    height: 30rem;
+}
+.productos__titulo{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+    /* Tarjetas */
+
+.productos__container{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.productos__container__card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primario);
+    height: 20rem;
+    width: 15rem;
+    color: var(--color-resaltar);
+    border-radius: 10px;
+}
+.productos__container__card__img{
+    background-image: url(img/soda.webp);
+    height: 15rem;
+    width: 10rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+.productos__container__card__nombre{
+    margin-left: 2rem;
+}
+
+.productos__container__card__desc{
+    margin-left: 1.5rem;
+}
